@@ -9,4 +9,4 @@ For project 3 of Udacity's Full Stack Nanodegree
 3. In a command terminal, change directory ('cd') to the folder you downloaded the files to and type 'vagrant up'. This may take several minutes to complete, so be patient.
 4. Once this has been completed, type 'vagrant ssh', then 'cd' again to '/vagrant/tournament'.
 5. From there you can run 'python tournament_test.py', as well as connect directly to the database with 'psql tournament'.
-
+6. Once you have finished with the application, type 'ctrl + c' in the cmd window, then type 'vagrant halt' to close down the virtual machine without losing any data.
