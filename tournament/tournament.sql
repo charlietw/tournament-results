@@ -6,19 +6,21 @@
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
 
+DROP DATABASE IF EXISTS tournament;
+CREATE DATABASE tournament;
+\c tournament
+
 --To store the players.
 create table players(
-    name text,
-    id serial,
-    PRIMARY KEY(id)
+    name TEXT,
+    id SERIAL PRIMARY KEY
 );
 
 --To store the outcome of the matches played.
 create table matches(
-    winner integer references players(id),
-    loser integer references players(id),
-    id serial,
-    PRIMARY KEY(id)
+    winner INTEGER references players(id),
+    loser INTEGER references players(id),
+    id SERIAL PRIMARY KEY
 );
 
 --Selects the players, ordered by the number of matches they have won (also includes total matches played).
