@@ -1,5 +1,5 @@
-# Tournament_Results
-For project 3 of Udacity's Full Stack Nanodegree
+# Tournament results
+Using raw SQL to create and determine outcomes in a tournament. Written for project 3 of Udacity's Full Stack Nanodegree
 
 
 1. In order to run this application, you will first need to install some software to your local machine:
